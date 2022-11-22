@@ -1,0 +1,45 @@
+.main-footer{
+    text-align: center;
+    background-color: #90D4C6;
+    padding-top: 64px;
+    padding-bottom: 80px; 
+
+    .main-footer__logo{
+        height: 33px;
+
+        .logo{
+            transform: scale(1.378);
+        }
+
+
+        .logo path{
+            fill:#2C7566;
+        }
+    }
+
+    .footer__menu,
+    .footer__socials{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__menu{
+        gap: 57px;
+        margin: 44px 0 88px 0;
+
+        .footer__link{
+            color: #458D7E;
+            text-decoration: none;
+        }
+    }
+
+    .footer__socials{
+        gap: 28px;
+    }
+
+    .socials-link path{
+        fill: #458D7E;
+    }
+
+}

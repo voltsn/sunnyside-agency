@@ -1,0 +1,304 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+section {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.more-info-link {
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+.more-info-link::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #FAD400;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.25;
+  border-radius: 28px;
+}
+
+.main-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2em 0;
+}
+.main-header .mobile-menu-toggle {
+  border: none;
+  background: transparent;
+}
+
+.main-nav {
+  position: absolute;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  padding: 2.44em 0;
+  right: 0;
+  top: 120%;
+  display: none;
+}
+.main-nav::before {
+  content: "";
+  position: absolute;
+  top: -11%;
+  right: -1.18%;
+  border-top: 1.5625rem solid transparent;
+  border-bottom: 1.5625rem solid transparent;
+  border-left: 1.5625rem solid hsl(0deg, 0%, 100%);
+  transform: rotate(45deg);
+}
+.main-nav .main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  height: 100%;
+  position: relative;
+}
+.main-nav .main-menu .main-menu__item--rounded {
+  background-color: #FBD600;
+  font-family: "Fraunces";
+  font-size: 0.94rem;
+  padding: 1rem 1.87rem 0.94rem 2rem;
+  border-radius: 1.75rem;
+  text-transform: uppercase;
+  color: hsl(212deg, 27%, 19%);
+}
+.main-nav .main-menu .main-menu__item {
+  width: min-content;
+  color: hsl(232deg, 10%, 55%);
+}
+.main-nav .main-menu .main-menu__item .main-menu__link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+.main-footer {
+  text-align: center;
+  background-color: #90D4C6;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+.main-footer .main-footer__logo {
+  height: 33px;
+}
+.main-footer .main-footer__logo .logo {
+  transform: scale(1.378);
+}
+.main-footer .main-footer__logo .logo path {
+  fill: #2C7566;
+}
+.main-footer .footer__menu,
+.main-footer .footer__socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.main-footer .footer__menu {
+  gap: 57px;
+  margin: 44px 0 88px 0;
+}
+.main-footer .footer__menu .footer__link {
+  color: #458D7E;
+  text-decoration: none;
+}
+.main-footer .footer__socials {
+  gap: 28px;
+}
+.main-footer .socials-link path {
+  fill: #458D7E;
+}
+
+.title .title__content {
+  background-image: url("../../public/images/photos/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.25rem;
+  height: 33.625rem;
+  justify-content: center;
+  letter-spacing: 6.5px;
+  text-transform: uppercase;
+}
+.title .title__content .title__heading {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.brand .brand__image {
+  background-image: url("../../public/images/photos/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 312px;
+}
+.brand .brand__content {
+  padding: 64px 24px;
+}
+.brand .brand__content .brand__content__heading {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: hsl(212deg, 27%, 19%);
+}
+.brand .brand__content .brand__content__text {
+  color: hsl(232deg, 10%, 55%);
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.audience .audience__image {
+  background-image: url("../../public/images/photos/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 312px;
+}
+.audience .audience__content {
+  padding: 64px 24px;
+}
+.audience .audience__content .audience__content__heading {
+  color: hsl(212deg, 27%, 19%);
+  margin-bottom: 24px;
+}
+.audience .audience__content .audience__content__text {
+  color: hsl(232deg, 10%, 55%);
+  margin-bottom: 32px;
+  line-height: 30px;
+}
+
+.graphic-design {
+  height: 600px;
+  background-image: url("../../public/images/photos/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.graphic-design .graphic-design__content {
+  position: absolute;
+  bottom: 59px;
+  padding: 0 24px;
+}
+.graphic-design .graphic-design__content .graphic-design__content__heading {
+  margin-bottom: 27px;
+  color: hsl(167deg, 40%, 24%);
+}
+.graphic-design .graphic-design__content .graphic-design__content__text {
+  color: hsl(167deg, 40%, 24%);
+  line-height: 27px;
+  font-size: 16px;
+  letter-spacing: -0.11px;
+}
+
+.photography {
+  height: 600px;
+  background-image: url("../../public/images/photos/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.photography .photography__content {
+  position: absolute;
+  bottom: 59px;
+  padding: 0 24px;
+}
+.photography .photography__content .photography__content__heading {
+  margin-bottom: 27px;
+  color: #052C3B;
+}
+.photography .photography__content .photography__content__text {
+  color: #19536C;
+  line-height: 27px;
+  font-size: 16px;
+  letter-spacing: -0.11px;
+}
+
+.testimonials {
+  padding: 64px 24px;
+}
+.testimonials .testimonials__heading {
+  color: #A7AAAD;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 64px;
+}
+.testimonials .testimonials__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.testimonials .testimonials__item__image {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+.testimonials .testimonials__item__text {
+  color: #5B636D;
+  line-height: 32px;
+  letter-spacing: -0.13px;
+  margin-bottom: 32px;
+}
+.testimonials .testimonials__item__name {
+  font-family: "Fraunces", serif;
+  letter-spacing: -0.13px;
+  margin-bottom: 9px;
+}
+.testimonials .testimonials__item__job-title {
+  font-size: 14px;
+  color: #A7AAAD;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 188px;
+}
+
+/*# sourceMappingURL=main.css.map */

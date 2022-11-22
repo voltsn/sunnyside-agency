@@ -1,0 +1,186 @@
+@import 'partials/base';
+@import 'partials/header';
+@import 'partials/footer';
+
+.title{
+    
+    .title__content{
+        background-image: url("../../public/images/photos/image-header.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.25rem;
+        height: 33.625rem;
+        justify-content: center;
+        letter-spacing: 6.5px;
+        text-transform: uppercase;
+
+        .title__heading{
+            color: $white;
+            font-weight: 900;
+            font-size: 2.5rem;
+        }
+
+    }
+
+}
+
+.brand{
+    
+    .brand__image{
+        background-image: url("../../public/images/photos/image-transform.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 312px;
+    }
+
+    .brand__content{
+        padding: 64px 24px;
+        
+        .brand__content__heading{
+            font-size: 32px;
+            margin-bottom: 24px;
+            color: $dark-blue;
+        }
+        
+        .brand__content__text{
+            color: $grayish-blue;
+            line-height: 30px;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.audience {
+
+    .audience__image{
+        background-image: url("../../public/images/photos/image-stand-out.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 312px;
+    }
+
+    .audience__content{
+        padding: 64px 24px;
+
+        .audience__content__heading{
+            color: $dark-blue;
+            margin-bottom: 24px;
+        }
+    
+        .audience__content__text{
+            color: $grayish-blue;
+            margin-bottom: 32px;
+            line-height: 30px;
+        }
+    }
+}
+
+.graphic-design{
+    height: 600px;
+    background-image: url("../../public/images/photos/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .graphic-design__content{
+        position: absolute;
+        bottom: 59px;
+        padding: 0 24px;
+
+        .graphic-design__content__heading{
+            margin-bottom: 27px;
+            color: hsl(167, 40%, 24%);
+        }
+
+        .graphic-design__content__text{
+            color: hsl(167, 40%, 24%);
+            line-height: 27px;
+            font-size: 16px;
+            letter-spacing: -0.11px;
+        }
+    }
+}
+
+.photography{
+    height: 600px;
+    background-image: url("../../public/images/photos/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;  
+    
+    .photography__content{
+        position: absolute;
+        bottom: 59px;
+        padding: 0 24px;
+
+        .photography__content__heading{
+            margin-bottom: 27px;
+            color: #052C3B;
+        }
+
+        .photography__content__text{
+            color: #19536C;
+            line-height: 27px;
+            font-size: 16px;
+            letter-spacing: -0.11px;
+        }
+    }
+}
+
+.testimonials {
+    padding: 64px 24px;
+
+    .testimonials__heading{
+        color: #A7AAAD;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 64px;
+    }
+
+    .testimonials__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .testimonials__item__image{
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        margin-bottom: 32px;
+    }
+
+   .testimonials__item__text{
+        color: #5B636D;
+        line-height: 32px;
+        letter-spacing: -0.13px;
+        margin-bottom: 32px;
+    }
+
+    .testimonials__item__name{
+        font-family: "Fraunces", serif;
+        letter-spacing: -0.13px;
+        margin-bottom: 9px;
+    }
+
+    .testimonials__item__job-title{
+        font-size: 14px;
+        color: #A7AAAD;
+    }
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 188px;
+}
