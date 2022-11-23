@@ -6,7 +6,8 @@
     top: 0;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    align-items: center;
+    width: 90%;
     left: 50%;
     transform: translateX(-50%);
     padding: 2em 0;
@@ -24,17 +25,18 @@
     padding: 2.44em 0;
     right: 0;
     top: 120%;
+    transform: scale(0);
     display: none;
 
     &::before{
         content: "";
         position: absolute;
-        top: -11%;
-        right: -1.18%;
-        border-top: 1.5625rem solid transparent;
-        border-bottom: 1.5625rem solid transparent;
-        border-left: 1.5625rem solid $white;
-        transform: rotate(45deg);
+        top: -25px;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        background-color: #FFF;
+        clip-path: polygon(100% 0.6%, 100% 100%, 0% 100%);
     }
 
     .main-menu{
@@ -45,7 +47,7 @@
         list-style: none;
         height: 100%;
         position: relative;
-
+        
         
         .main-menu__item--rounded{
             background-color: #FBD600;
@@ -55,11 +57,15 @@
             border-radius: 1.75rem;
             text-transform: uppercase;
             color: $dark-blue;
+            cursor: pointer;
         }
         
         .main-menu__item{
             width: min-content;
             color: $grayish-blue;
+            &:hover{
+                opacity: 0.25;
+            }
             
             .main-menu__link{
                 text-decoration: none;
@@ -71,6 +77,64 @@
     }
 }
 
+.open-menu{
+    display: block !important;
+    transform-origin: top right;
+    animation-name: grow;
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    animation-delay: 200ms;
+}
+
+@keyframes grow {
+    from {
+        transform: translateY(-20%) scale(0);
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media screen and (min-width: 780px){
+    .main-nav{
+        position: static;
+        display: block;
+        background-color: unset;
+        width: unset;
+        padding: unset;
+        transform: unset;
+
+        &::before{
+            display: none;
+        }
+
+        .main-menu{
+            flex-direction: row;
+
+            .main-menu__item{
+                color: $white;
+            }
+
+            .main-menu__item--rounded{
+                background-color: $white;
+                color: #24303E;
+
+                &:hover{
+                    opacity: 1;
+                    background-color: rgba(255, 255, 255, 0.25);
+                    color: $white;
+                }
+            }
+
+        }
+    }
+
+    .mobile-menu-toggle{
+        display: none;
+    }
+}
 
 
 

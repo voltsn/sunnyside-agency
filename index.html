@@ -20,6 +20,8 @@
     <!-- My stylesheet -->
     <link rel="stylesheet" href="public/css/main.css">
 
+    <script src="public/js/main.js" defer></script>
+
     <title>Sunnyside agency landing page</title>
   </head>
   <body>
@@ -39,7 +41,7 @@
         </svg>
       </div>
 
-      <nav class="main-nav">
+      <nav id="main-nav" class="main-nav">
         <ul class="main-menu">
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">About</a>
@@ -57,7 +59,7 @@
           </li>
         </ul>
       </nav>
-      <button class="mobile-menu-toggle">
+      <button id="menu-toggle-btn" class="mobile-menu-toggle">
         <svg class="mobile-menu-toggle-icon" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
       </button>
     </header>
@@ -117,27 +119,30 @@
         </div>
       </section>
 
-      <section class="graphic-design">
-        <div class="graphic-design__content">
-          <h1 class="graphic-design__content__heading">Graphic design</h1>
-          <p class="graphic-design__content__text">
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
-          </p>
-        </div>
-      </section>
+      
+      <div class="two-col-container">
+        <section class="graphic-design">
+          <div class="graphic-design__content">
+            <h1 class="graphic-design__content__heading">Graphic design</h1>
+            <p class="graphic-design__content__text">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </section>
 
-      <section class="photography">
-        <div class="photography__content">
-          <h1 class="photography__content__heading">Photography</h1>
-          <p class="photography__content__text">
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
-        </div>
-      </section>
-
+        <section class="photography">
+          <div class="photography__content">
+            <h1 class="photography__content__heading">Photography</h1>
+            <p class="photography__content__text">
+              Increase your credibility by getting the most stunning, high-quality
+              photos that improve your business image.
+            </p>
+          </div>
+        </section>
+      </div>
+      
       <section class="testimonials">
         <h1 class="testimonials__heading">Client testimonials</h1>
 

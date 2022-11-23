@@ -8,6 +8,7 @@ html{
 *,
 *::before,
 *::after{
+    box-sizing: inherit;
     padding: 0;
     margin: 0;
 }
@@ -15,7 +16,13 @@ html{
 body{
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
+    width: 100vw;
 }
+
+// main{
+//     max-width: 1440px;
+//     margin: 0 auto;
+// }
 
 section{
     text-align: center;
@@ -32,8 +39,6 @@ img{
 }
 
 
-
-
 .more-info-link{
     color: $dark-blue;
     font-family: "Fraunces", serif;
@@ -41,18 +46,17 @@ img{
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
-
+    
     &::after{
         content: "";
         width: 100%;
         height: 10px;
-        background-color: #FAD400;
         position: absolute;
         bottom: 0;
         left: 0;
         opacity: 0.25;
         border-radius: 28px;
+        z-index: -1;
     }
 }
-
 

@@ -31,6 +31,10 @@
         .footer__link{
             color: #458D7E;
             text-decoration: none;
+            &:hover{
+                color: #FFF;
+            }
+
         }
     }
 
@@ -42,4 +46,14 @@
         fill: #458D7E;
     }
 
+    .socials-link:hover path{
+        fill: #FFF;
+    }
+}
+
+@media screen and (min-width: 780px){
+    
+    .main-footer{
+        padding: 72px 0;
+    }
 }
